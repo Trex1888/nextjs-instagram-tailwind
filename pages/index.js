@@ -1,15 +1,17 @@
 import Head from "next/head";
+import Feed from "../components/Feed";
 import Header from "../components/Header";
 
 export default function Home() {
   return (
-    <div className="bg-green-200">
+    <div className="bg-gray-50 h-screen overflow-y-scroll scrollbar-hide">
       <Head>
         <title>Nextjs Instagram</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Header />
+      <Feed />
 
       <main className="text-2xl text-left font-bold px-4 py-2">
         <h1>You Enjoy Myself</h1>
