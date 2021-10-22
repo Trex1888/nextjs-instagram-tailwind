@@ -36,9 +36,14 @@ function Post({ id, username, userImg, img, caption }) {
         {caption}
       </p>
 
-      <form className="flex p-2 space-x-2">
+      <form className="flex items-center p-4">
         <EmojiHappyIcon className="btn" />
-        <input type="text" placeholder="Enter Tweet" className="w-full" />
+        <input
+          type="text"
+          placeholder="Add a comment..."
+          className="border-none flex-1 focus:ring-0 outline-none"
+        />
+        <button className="font-semibold text-blue-400">Post</button>
       </form>
     </div>
   );
